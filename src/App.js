@@ -7,8 +7,7 @@ const App = () => {
   return (
     <div class="container mx-auto">
       <div class="flex flex-row">
-        {/* <Form /> */}
-        <EmojiPicker />
+        <Form />
       </div>
     </div>
   );

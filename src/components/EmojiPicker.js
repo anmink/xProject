@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Picker from "emoji-picker-react";
+import { FiX, FiEdit2 } from "react-icons/fi";
 
 const EmojiPicker = () => {
   const [chosenEmoji, setChosenEmoji] = useState(null);
@@ -9,14 +10,7 @@ const EmojiPicker = () => {
   };
 
   return (
-    <div>
-      {chosenEmoji ? (
-        <span>You chose: {chosenEmoji.emoji}</span>
-      ) : (
-        <span>No emoji Chosen</span>
-      )}
-      <Picker onEmojiClick={onEmojiClick} />
-    </div>
+    <div>{chosenEmoji ? <span></span> : <span>No emoji Chosen</span>}</div>
   );
 };
 
